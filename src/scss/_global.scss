@@ -1,0 +1,477 @@
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: 'Montserrat';
+  font-weight: 400;
+
+  overflow-x: hidden;
+
+  background-color: $bg-color;
+  background-image: url('../images/bg2.jpg');
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#MainContainer {
+  z-index: 1;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('../images/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+  #data{
+    font-size: 1.5rem;
+  }
+
+}
+
+#MainContent {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  h1 {
+    font-family: 'Montserrat', Arial;
+    text-align: center;
+
+    margin-top: -10%;
+
+    color: white;
+    font-size: 3rem;
+
+    @media(max-width: 992px){
+      font-size: 2.5rem;
+    }
+  }
+
+  #MainHeader {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    flex-direction: column;
+    #HeaderLogo {
+      font-family: 'Montserrat', Arial;
+      text-align: center;
+      
+      img {
+        height: 150px; 
+        @media(max-width: 992px){
+         height: 70px;
+        }
+      }
+
+      color: white;
+      font-size: 2.0rem;
+
+    }
+
+    #MainSubLogo {
+      p {
+        text-transform: uppercase;
+      }
+    }
+
+    #HeaderMenu {
+      ul {
+        li {
+          display: inline-block;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+
+  #MainHeader {
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    top: 0;
+  }
+
+  #MainButtonCta {
+      height: 50px;
+      width: 25%;
+      color: white;
+      border-radius: 4px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin-top: 20px;
+      padding: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: $button-color;
+      border: 2px solid $button-color;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $button-color;
+        border-color: white;
+        color: white;
+      }
+  }
+}
+
+
+#DescriptionSection {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 5%;
+
+  background: url('../images/bg2.jpg') no-repeat;
+  background-size: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  h2 {
+    margin: 0;
+    padding: 2%;
+    text-transform: uppercase;
+
+    font-size: 2.4rem;
+    color: #253845;
+  }
+
+  .descriptionVideo {
+    border: 10px solid white;
+    border-radius: 8px;
+  }
+
+  #QuemSomos {
+    width: 50%;
+    align-content: center;
+    text-align: left;
+    align-items: center;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-top: 100px;
+      color: white;
+
+    }
+
+    #Aviaozinho {
+      margin-top: -50px;
+    }
+
+    #QuemSomosCtaButton {
+      z-index: 5;
+      height: 30px;
+      width: 30%;
+      color: white;
+      border-radius: 4px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin-top: 20px;
+      padding: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: $button-color;
+      border: 2px solid $button-color;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $button-color;
+        border-color: white;
+        color: white;
+      }
+    }
+  }
+
+}
+
+#DoacoesHeader {
+  background: url('../images/bg3.jpg') no-repeat;
+  background-position-x: center;
+  background-size: 100%;
+
+  min-height: 300px;
+
+  margin-top: -250px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+    padding: 2%;
+    text-transform: uppercase;
+
+    font-size: 2.4rem;
+    color: #253845;
+  }
+
+}
+
+#DoacoesSection {
+
+  #BolasDoacoes {
+
+    .BolaRow {
+      display: flex;
+      justify-content: center;
+
+      .BolaContainer {
+
+        text-align: center;
+        margin: 50px;
+
+        .BolaImg {
+          height: 200px;
+          width: 200px;
+          background-color: white;
+          border: 10px solid #E3E3E3;
+          border-radius: 200px;
+        }
+        .BolaTxt {
+          color: white;
+          padding-top: 25px;
+          text-transform: uppercase;
+        }
+        .TxtFooter {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+      }
+
+    }
+  }
+
+}
+
+#VoluntarioSection {
+  background: url('../images/bg4.jpg') no-repeat;
+  background-position-x: center;
+  background-size: 100%;
+
+  min-height: 710px;
+
+  margin-top: -200px;
+
+  display: flex;
+  justify-content: center;
+
+  #VoluntarioButton {
+      z-index: 5;
+      height: 60px;
+      width: 30%;
+      color: white;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin-top: 250px;
+      padding: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: $button-color;
+      border: 2px solid $button-color;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $button-color;
+        border-color: white;
+        color: white;
+      }
+    }
+
+}
+
+#GaleriaSection {
+  background: url('../images/bg5.jpg') no-repeat;
+  background-position-x: center;
+  background-size: 100%;
+  background-color: #B4DBEA;
+
+  min-height: 710px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+    padding: 2%;
+    text-transform: uppercase;
+    text-align: center;
+
+    font-size: 2.4rem;
+    color: #253845;
+  }
+
+   .BolaRow {
+      display: flex;
+      justify-content: center;
+
+      .BolaContainer {
+
+        text-align: center;
+        margin: 30px;
+
+        .BolaImg {
+          height: 250px;
+          width: 250px;
+          background-color: white;
+          border: 10px solid #FF1A66;
+          border-radius: 250px;
+        }
+
+      }
+
+    }
+
+  #Aviaozinho2 {
+    margin-top: 5%;
+  }
+}
+
+
+
+#CtaSection {
+  min-height: 400px;
+  width: 100%;
+  color: white;
+
+  background: url('../images/maps.png') no-repeat;
+  background-position-x: center;
+  background-size: 100%;
+  background-color: #B4DBEA;
+
+  font-size: 13px;
+  text-align: center;
+
+  #background{
+    background-color: rgba(0,0, 0, .5);
+    z-index: 5;
+    width: 100%;
+    min-height: 400px;
+    padding-top: 100px;
+  }
+
+  @media(max-width: 992px) {
+    padding: 30px;
+    width: auto;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+
+    font-size: 2.4rem;
+    color: white;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  #CtaContainer { 
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+
+    h3 {
+      text-align: left;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+    }
+
+    .title {
+      font-weight: 300;
+      padding-top: 30px;
+    }
+
+    .email {
+      padding-top: 30px;
+      text-transform: lowercase;
+      color: #14BEFF;
+    }
+  }
+}
+
+#Footer {
+  background-color: #B4DBEA; 
+  width: 100%; 
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  p {
+    text-align: center; 
+    color: 253845; 
+    margin:0;
+    text-transform: uppercase;
+
+    @media(max-width: 992px) {
+      font-size: 10px;
+    }
+  }
+
+}
+
+#Leads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
