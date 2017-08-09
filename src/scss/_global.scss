@@ -184,7 +184,6 @@ body, html {
     flex-direction: column;
 
     p {
-      margin-top: 100px;
       color: white;
 
     }
@@ -260,20 +259,33 @@ body, html {
 
         text-align: center;
         margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .BolaImg {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
           height: 200px;
           width: 200px;
           background-color: white;
           border: 10px solid #E3E3E3;
           border-radius: 200px;
+
         }
         .BolaTxt {
           color: white;
           padding-top: 25px;
           text-transform: uppercase;
+          width: 300px;
         }
         .TxtFooter {
+            color: white;
+            padding-top: 25px;
+            text-transform: uppercase;
             font-size: 1.3rem;
             font-weight: bold;
         }
@@ -363,13 +375,33 @@ body, html {
         .BolaImg {
           height: 250px;
           width: 250px;
-          background-color: white;
+          background-color: transparent;
           border: 10px solid #FF1A66;
           border-radius: 250px;
         }
 
       }
 
+    }
+
+    #Galeria1 {
+      background-image: url('../images/galeria/galeria1.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    #Galeria2 {
+      background-image: url('../images/galeria/galeria2.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    #Galeria3 {
+      background-image: url('../images/galeria/galeria3.jpg');
+      background-size: 150%;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: center;
     }
 
   #Aviaozinho2 {
